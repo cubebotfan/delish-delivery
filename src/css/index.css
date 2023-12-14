@@ -1,6 +1,19 @@
 @charset "utf-8";
 @import url(./base-styles.css);
 
+.any-time {
+	margin-top: 140px;
+}
+
+.any-time h2 {
+	text-align: center;
+	color: var(--app-main-color);
+}
+
+.any-time p {
+	text-align: center;
+}
+
 .map {
 	margin-top: 180px;
 	margin-bottom: 40px;
@@ -9,7 +22,6 @@
 
 .map h2 {
 	color: var(--app-main-color);
-	font-size: 32px;
 }
 
 .map p {
@@ -42,4 +54,69 @@
 
 .mapboxgl-ctrl-bottom-left, .mapboxgl-ctrl-bottom-right {
 	visibility: hidden;
+}
+
+.desserts {
+	margin-top: 180px;
+	background-color: var(--app-second-color);
+	padding-bottom: 80px;
+}
+
+.desserts h2 {
+	text-align: center;
+	color: #ffffff;
+	margin-top: 40px;
+}
+
+.mini-banner {
+	margin-top: 40px;
+	border-radius: 25px;
+  height: 180px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #b0b0b0;
+
+  display: flex;
+
+  color: #FFFFFF;
+  font-size: 32px;
+
+	display: flex;
+}
+
+.mini-banner h3 {
+	margin-top: auto;
+	margin-right: auto;
+	margin-bottom: 4px;
+	margin-left: 12px;
+}
+
+.mini-banner.muffins {
+	background-image:
+    linear-gradient(#00000020, #00000020),
+		/* https://unsplash.com/photos/brown-cupcakes-on-blue-and-white-ceramic-plate-BLy3LMYMVvE */
+    url("../img/muffins.jpg");
+}
+
+.mini-banner.cake {
+	background-image:
+    linear-gradient(#00000020, #00000020),
+		/* https://unsplash.com/photos/white-cake-with-chocolate-syrup-on-white-ceramic-plate-vdx5hPQhXFk */
+    url("../img/cake.jpg");
+}
+
+.mini-banner.cookies {
+	background-image:
+    linear-gradient(#00000020, #00000020),
+		/* https://unsplash.com/photos/brown-cookies-on-white-ceramic-plate-3DrCZblTGoQ */
+    url("../img/cookies.jpg");
+}
+
+.mini-banner.icecream {
+	background-image:
+    linear-gradient(#00000020, #00000020),
+		/* https://unsplash.com/photos/brown-and-white-ice-cream-YIrLhY5qsQE */
+    url("../img/icecream.jpg");
 }

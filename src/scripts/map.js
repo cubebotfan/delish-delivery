@@ -10,7 +10,8 @@ const map = new mapboxgl.Map({
 	zoom: 1 // starting zoom
 });
 const marker = new mapboxgl.Marker({
-	color: "#0000ff"
+	color: "var(--app-main-color)" //oh my god this actually works... I didn't know this would actually work.
+	//Actually it makes more sense now thinking about it since this is probably set as a css style.
 });
 
 let mapLoaded = false;
@@ -24,9 +25,9 @@ function setPosition(position) {
 	const longLat = [position.coords.longitude, position.coords.latitude];
 
 	if (mapLoaded) {
-		map.flyTo({center: longLat, zoom: 16});
+		map.flyTo({center: longLat, zoom: 16, bearing: 0, pitch: 0});
 	} else {
-		map.jumpTo({center: longLat, zoom: 16});
+		map.jumpTo({center: longLat, zoom: 16, bearing: 0, pitch: 0});
 		mapLoaded = true;
 	}
 
