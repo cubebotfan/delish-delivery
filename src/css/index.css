@@ -14,46 +14,26 @@
 	text-align: center;
 }
 
-.map {
-	margin-top: 180px;
-	margin-bottom: 40px;
-	text-align: center;
-}
+.any-time-image {
+	background-image:
+		/* https://unsplash.com/photos/cheesecake-with-pink-toppings-FDYbS43jUrU */
+    url("../img/any-time-image.jpg");
 
-.map h2 {
-	color: var(--app-main-color);
-}
+	margin-top: 40px;
+	border-radius: 25px;
+  height: 360px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #b0b0b0;
 
-.map p {
-	font-size: 24px;
-}
+  display: flex;
 
-.map .track {
-	margin-top: 20px;
-	margin-bottom: 40px;
-	margin-inline: auto;
-	width: 120px;
-	height: 40px;
+  color: #FFFFFF;
+  font-size: 32px;
 
-	color: #ffffff;
-	background-color: var(--app-main-color);
-	font-size: 24px;
-}
-
-.map .track:hover {
-	background-color: var(--app-main-color-hover);
-}
-
-#map {
-	width: 100%;
-	height: 600px;
-
-	border-radius: 15px;
-	margin-inline: auto;
-}
-
-.mapboxgl-ctrl-bottom-left, .mapboxgl-ctrl-bottom-right {
-	visibility: hidden;
+	display: flex;
 }
 
 .desserts {
@@ -119,4 +99,46 @@
     linear-gradient(#00000020, #00000020),
 		/* https://unsplash.com/photos/brown-and-white-ice-cream-YIrLhY5qsQE */
     url("../img/icecream.jpg");
+}
+
+.map {
+	margin-top: 90px;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.map h2 {
+	color: var(--app-main-color);
+}
+
+.map p {
+	font-size: 24px;
+}
+
+.map .track {
+	margin-top: 20px;
+	margin-bottom: 40px;
+	margin-inline: auto;
+	width: 120px;
+	height: 40px;
+
+	color: #ffffff;
+	background-color: var(--app-main-color);
+	font-size: 24px;
+}
+
+.map .track:hover {
+	background-color: var(--app-main-color-hover);
+}
+
+#map {
+	width: 100%;
+	height: 600px;
+
+	border-radius: 15px;
+	margin-inline: auto;
+}
+
+.mapboxgl-ctrl-bottom-left, .mapboxgl-ctrl-bottom-right {
+	visibility: hidden;
 }
