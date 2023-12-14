@@ -1,0 +1,158 @@
+@charset "utf-8";
+@import url(./reset.css);
+
+:root {
+	--app-background-color: #f3f4f7;
+
+	--app-header-height: 60px;
+	--app-header-background: #904040;
+	--app-header-font-color: #ffffff;
+
+	--app-footer-height: 60px;
+	--app-footer-background: #402000;
+	--app-footer-font-color: #ffffff;
+
+	--app-main-color: #904040;
+	--app-main-color-hover: #b45757;
+}
+
+.container {
+  width: min(1080px, 100% - 30px);
+  margin-inline: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.center {
+  align-items: center;  
+}
+
+a {
+  /* NO */
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  font-size: 0px;
+}
+
+button {
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	background-color: var(--app-background-color);
+
+	width: 100vw;
+	overflow-x: hidden;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+}
+
+.colour-1 {
+	color: var(--app-main-color);
+}
+
+.hero-banner {
+	background-image:
+    /*linear-gradient(#00000000, #00000000),*/
+    url("../img/taylor-kiser-s7Vh1kg-clM-unsplash.jpg");
+  height: 540px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #b0b0b0;
+
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+  color: #FFFFFF;
+  font-size: 32px;
+}
+
+.hero-banner h1 {
+	margin-inline: auto;
+}
+
+/* header styles */
+
+header {
+	display:flex;
+	position:sticky;
+	top: 0px;
+	overflow:hidden;
+	width: 100vw;
+	line-height: var(--app-header-height);
+	height: var(--app-header-height);
+
+	background-color: var(--app-header-background);
+	color: var(--app-header-font-color);
+}
+
+header * {
+	display: flex;
+	line-height:inherit;
+	height:inherit;
+}
+
+header nav {
+	margin-left: auto;
+}
+
+header ul {
+	line-height: var(--app-header-height);
+}
+
+header li {
+	font-size: 16px;
+}
+
+header button.sign-in {
+	padding: 10px;
+	height: calc(var(--app-header-height) - 20px);
+	line-height: calc(var(--app-header-height) - 40px); /* -40??? */
+	margin-top: auto;
+	margin-bottom: auto;
+
+	color: var(--app-header-background);
+	background-color: #dddddd;
+}
+
+header button.sign-in:hover {
+	background-color: #ffffff;
+}
+
+/* Footer */
+footer {
+	margin-top: auto;
+	background-color: var(--app-footer-background);
+	height: var(--app-footer-height);
+	width: 100vw;
+
+	color: var(--app-footer-font-color);
+	line-height: var(--app-footer-height);
+
+	display: flex;
+}
+
+footer * {
+	height: inherit;
+}
+
+footer p.copy {
+	margin-left: auto;
+	margin-right: 8px;
+}

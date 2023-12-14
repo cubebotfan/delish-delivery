@@ -1,0 +1,45 @@
+@charset "utf-8";
+@import url(./base-styles.css);
+
+.map {
+	margin-top: 180px;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.map h2 {
+	color: var(--app-main-color);
+	font-size: 32px;
+}
+
+.map p {
+	font-size: 24px;
+}
+
+.map .track {
+	margin-top: 20px;
+	margin-bottom: 40px;
+	margin-inline: auto;
+	width: 120px;
+	height: 40px;
+
+	color: #ffffff;
+	background-color: var(--app-main-color);
+	font-size: 24px;
+}
+
+.map .track:hover {
+	background-color: var(--app-main-color-hover);
+}
+
+#map {
+	width: 100%;
+	height: 600px;
+
+	border-radius: 15px;
+	margin-inline: auto;
+}
+
+.mapboxgl-ctrl-bottom-left, .mapboxgl-ctrl-bottom-right {
+	visibility: hidden;
+}
